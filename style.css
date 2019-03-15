@@ -1,0 +1,147 @@
+Html {
+    box-sizing: border-box;
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(assets/bg.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
+
+*,* ::after, *::before {
+    box-sizing: inherit;
+}
+
+body {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    font-family: Helvetica, sans-serif;
+}
+
+    .container {
+        width: 750px;
+        height: 1000px;
+}
+
+        .social {
+            display: flex;
+            width: 100%;
+            justify-content: flex-end;
+            align-items: center;
+}
+            .sub {
+                color: white;
+                text-transform: uppercase;
+                font-weight: 200;
+                font-size: 10px;
+                letter-spacing: 0.1em;
+                margin-right:10%;
+
+}
+            .dotColumn {
+                display:flex;
+                flex-direction: column;
+                padding: 10px;
+}
+
+                .dot {
+                    height: 5px;
+                    width: 5px;
+                    background-color:white;
+                    border-radius: 50%;
+                    margin:1px;
+                }
+
+
+
+            .socialMediaLinks img {
+                height: 50px;
+                opacity: 0.9;
+                border-bottom: 3px solid rgb(140,140,136);
+                opacity: 0.8;
+            }
+        
+        .nav {
+            display:flex;
+            justify-content: space-between;
+            margin-top:10px;
+        }
+            .nav div {
+                background-color: rgb(170,36,41);
+                border-bottom: 3px solid rgb(140,140,136);
+                width:24%;
+                height: 35px;
+                padding: 10px;
+                text-transform: uppercase;
+                color: white;
+                font-size: 13px;
+                text-align: center;
+                letter-spacing: 0.1em;
+                font-weight: lighter;
+            }
+
+        .mainImg {
+            margin-top: 10px;
+            border: solid 6px white;
+            background: url(assets/grid.png);
+            height: 272px;
+            position: relative;
+        }
+
+        .border {
+            border-bottom: 3px solid rgb(140,140,136);
+        }
+
+
+            #photoGuy {
+            width: 100%;
+            opacity: 0.9;
+        }
+
+            #wings {
+            position: absolute;
+            height: 170px;
+            bottom: 55px;
+            left: 20px;
+        }
+
+        .radio {
+            display: flex;
+            justify-content: center;
+            padding: 15px;
+        }
+
+        .news {
+            display: flex;
+            justify-content: space-between;
+
+        }
+            .news div {
+                width: 32%;
+                background: white;
+                border-bottom: 3px solid rgb(140,140,136);
+                padding: 5px 20px;
+            }
+
+                .news div h1 {
+                    font-size: 18px;
+                    font-weight: lighter;
+                }
+
+                .news div date {
+                    color: rgb(182, 168, 168);
+                    font-size: 10px;
+                    font-weight: lighter;
+                }
+
+                .news div p {
+                    font-size: 10px;
+                    line-height: 1.5;
+                }
+
+                .news div h2 {
+                    color: rgb(125,41,44);
+                    font-size: 10px;
+                    text-align: center;
+                }
+
+
+    
+            
