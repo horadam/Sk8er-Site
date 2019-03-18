@@ -1,6 +1,6 @@
 Html {
     box-sizing: border-box;
-    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(assets/bg.jpg) no-repeat center center fixed;
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(assets/bg.jpg) no-repeat center;
     background-size: cover;
 }
 
@@ -12,11 +12,11 @@ body {
     display: flex;
     width: 100%;
     justify-content: center;
-    font-family: Helvetica, sans-serif;
+    font-family: Gill Sans, Helvetica, sans-serif;
 }
 
     .container {
-        width: 750px;
+        width: 770px;
         height: 1000px;
 }
 
@@ -30,20 +30,20 @@ body {
                 color: white;
                 text-transform: uppercase;
                 font-weight: 200;
-                font-size: 10px;
+                font-size: 11px;
                 letter-spacing: 0.1em;
-                margin-right:10%;
+                margin-right:7%;
 
 }
             .dotColumn {
                 display:flex;
                 flex-direction: column;
-                padding: 10px;
+                padding: 8px;
 }
 
                 .dot {
-                    height: 5px;
-                    width: 5px;
+                    height: 4px;
+                    width: 4px;
                     background-color:white;
                     border-radius: 50%;
                     margin:1px;
@@ -81,7 +81,7 @@ body {
             margin-top: 10px;
             border: solid 6px white;
             background: url(assets/grid.png);
-            height: 272px;
+            height: 279px;
             position: relative;
         }
 
@@ -114,14 +114,14 @@ body {
 
         }
             .news div {
-                width: 32%;
+                width: 32.5%;
                 background: white;
                 border-bottom: 3px solid rgb(140,140,136);
-                padding: 5px 20px;
+                padding: 5px 22px;
             }
 
-                .news div h1 {
-                    font-size: 18px;
+                .news div h1, .contactText h1 {
+                    font-size: 20px;
                     font-weight: lighter;
                 }
 
@@ -137,11 +137,264 @@ body {
                 }
 
                 .news div h2 {
-                    color: rgb(125,41,44);
+                    color: rgb(163, 24, 29);
                     font-size: 10px;
                     text-align: center;
                 }
 
+        .skaters {
+            display:flex;
+            justify-content: space-between;
+            margin-top: 20px;
+            height: 370px;
+            position: relative;
+        }
 
-    
+            .skatersLeft {
+                width: 66.3%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+            }
+                .skatersLeftTop {
+                    display: flex;
+                    justify-content: space-between;
+                    height: 49%;
+                }
+                    #Lance{
+                        width:49%;
+                        background: url(assets/sk8er-4.png)
+                    }
+                    #Rodney{
+                        width:49%;
+                        background: url(assets/sk8er-3.png)
+                    }
+                .skatersLeftBottom {
+                    height:49%;
+                    background: url(assets/sk8er-1.png)
+                }
+
+            .skatersRight {
+                width: 32.5%;
+                background: url(assets/sk8er-2.png)
+            }
+
+                .skatersLeftTop{
+                    display:flex;
+                    justify-content: space-between;
+                    height: 49%;
+                    text-align: center;
+                }
+
+                .skaters h1 {
+                    font-size: 30px;
+                  }
+
+            #Lance, #Rodney, .skatersLeftBottom, .skatersRight {
+                text-align: center;
+                color: white;
+                text-transform: uppercase;
+                background-size: cover;
+                border: solid 3px white;
+                display: flex;
+                align-items: center;
+                justify-content:center;
+                position: relative;
+            }
+
+           #Lance::after {
+            content: "";
+            width: 250px;
+            height: 3px;
+            background-color: rgb(140,140,136);
+            position: absolute;
+            top: 178px;
+        }
+
+            #Rodney::after {
+                content: "";
+                width: 251px;
+                height: 3px;
+                background-color: rgb(140,140,136);
+                position: absolute;
+                top: 178px;
+            }
+
+            .skatersLeftBottom::after {
+                content: "";
+                width: 511px;
+                height: 3px;
+                background-color: rgb(140,140,136);
+                position: absolute;
+                top: 178px;
+            }
+
+            .skatersRight::after {
+                content: "";
+                width: 250px;
+                height: 3px;
+                background-color: rgb(140,140,136);
+                position: absolute;
+                top: 367px;
+            }
+
+            .signpost {
+                position: absolute;
+                right: 812px;
+                top: 26px;
+            }
+
+
+            .signpost div {
+                width: 180px;
+                height: 68px;
+                background-color: rgb(170,36,41);
+                margin: 25px auto;
+                position: relative;
+                text-align: center;
+                padding: 22px 0px 22px 10px;
+                font-size: 21px;
+                -webkit-filter:drop-shadow(1px 4px 1px gray);
+                }
+
+            .signpost:after {
+            content:"";
+            position: absolute; 
+            top:25px; 
+            left:100%; 
+            height:0;
+            width:0; 
+            border-width: 34px;
+            border-style:solid;
+            border-color:rgb(170,36,41); 
+            border-top-color:transparent;
+            border-bottom-color:transparent;
+            border-right-color:transparent;
+        }
+
+        .signpost:before {
+            content:"";
+            position: absolute; 
+            top:29px; 
+            left:100%; 
+            height:0;
+            width:0; 
+            border-width: 34px;
+            border-style:solid;
+            border-color:gray; 
+            border-top-color:transparent;
+            border-bottom-color:transparent;
+            border-right-color:transparent;
+        }
+
+
+        .boards {
+            background: white;
+            border-bottom: 3px solid rgb(140,140,136);
+            padding:10px 0px 15px;
+            margin-top: 20px;
+            display: flex;
+            justify-content: space-evenly;
+        }
+            .boards img {
+                height: 195px;
+            }
+
+
+        .contact {
+            background: white;
+            border-bottom: 3px solid rgb(140,140,136);
+            padding:10px 0px 15px;
+            margin-top: 20px;
+            margin-bottom: 70px;
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .contactText {
+            width: 55%;
+            padding: 5px 27px;
+        }
+            .contactText p {
+                font-size: 11px;
+                font-weight: lighter;
+                line-height: 2;
+                letter-spacing: 1px;
+            }
+
+        .smlinksbottom {
+            display:flex;
+            justify-content: flex-start;
+        }
+
+        .smlinksbottom img {
+            height: 20px;
+            margin-right: 5px;
+        }
+
+        .contactForm {
+            display: block;
+            width: 45%;
+            padding-top:20px;
+        }
+
+        .contactInfo {
+            width: 95%;
+            padding:7px;
+            margin-bottom: 10px;
+        }
+
+        ::placeholder, textarea {
+            text-transform: uppercase;
+            color: rgb(186,186,186)
+        }
+
+        .contactInfo {
+            box-shadow: inset 1px 1px 1px 0px rgba(100,100,100,0.75);
+        }
+
+        textarea {
+            resize:none;
+        }
+
+        .subButton {
+            display:flex;
+            justify-content: flex-end;
+        }
+
+        input[type=submit] {
+            margin-right: 18px;
+            background-color: rgb(170,36,41);
+            padding: 7px 70px;
+                text-transform: uppercase;
+                color: white;
+                font-size: 11px;
+                text-align: center;
+                letter-spacing: 0.1em;
+                font-weight: lighter;
+         }
+
+
+
+@media only screen and (max-width: 800px) {
+
+    .container {
+        width: 100%;
+    }
+    .nav {
+        flex-direction: column;
+    }
+
+    .nav div {
+        width: 100%;
+    }
+
+    .mainImg {
+        width:100%;
+    }
+
+    #photoGuy {
+        height: 100%;
+    }
+}
             
